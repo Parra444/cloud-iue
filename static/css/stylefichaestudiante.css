@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,900;1,100;1,300;1,900&display=swap');
+
+.ficha{
+    border: solid white 2px;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+    width: 380px;
+    height: 100%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+    
+    
+}
+.boton{
+    margin-top: 50px;
+    padding: 20px;
+    border: 3px solid #b7ceceff;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.boton:hover{
+    background-color: #e2e2e2ff;
+    color: black;    
+}
+a{
+    text-decoration: none;
+    color: #e2e2e2ff;
+}
+
+a:hover{
+    color: black;
+}
+
+h1{
+    font-size: 46px;
+}
+.fila{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height:650px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.filaboton{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.name{
+    font-size: 24px;
+    font-weight: 900;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    margin: 0;
+    color: white;
+    font-style: normal;
+    font-size: normal;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url(/imgs/universitybackground.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+}

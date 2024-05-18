@@ -1,0 +1,21 @@
+{
+    "estudiantes": [{
+            "alumno": {
+                "cedula": "1232323232",
+                "nombre": "Jose Perez",
+                "asignaturas": ["Calculo 1", " Fisica 3", " Programacion Web", " Teoria de sistemas"],
+                "programa": "Ingenieria Informática",
+                "foto": "/imgs/p2.png"
+            }
+        },
+        {
+            "alumno": {
+                "cedula": "1000053232",
+                "nombre": "Liliana Carrillo",
+                "asignaturas": ["Calculo 2", " Fisica 1", " Programacion Movil", " Teoria de sistemas"],
+                "programa": "Ingenieria Informática",
+                "foto": "/imgs/p1.png"
+            }
+        }
+    ]
+}

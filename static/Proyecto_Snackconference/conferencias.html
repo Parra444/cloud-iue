@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Proyecto_Snackconference/css/stylesnack.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Sala de conferencias</title>
+</head>
+<body>
+
+    <header>
+        <div class="container_nav">
+            <nav class="navbar">
+                <div class="botonnavbar"><a  href="/Proyecto_Snackconference/snackconferences.html">VOLVER AL INICIO</a></div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="conferencia">
+        <iframe class="confvid" width="560" height="315" src="https://www.youtube.com/embed/IBsSUVIwupQ?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div id="comApp">
+        <label for="">Deja tus comentarios</label>
+        <form onsubmit="agregarComentario()" action="">
+            <div class="filacol">
+                <input type="text" placeholder="Introduce tu comentario" id="txt-comments">
+                <input type="submit" id="btnEnviarComentario" value="Enviar">
+            </div>            
+        </form>
+        <div id="comment-section">
+
+        </div>
+    </div>
+    <script src="/Proyecto_Snackconference/js/comments.js"></script>
+</body>
+</html>

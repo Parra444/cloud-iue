@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;800;900&display=swap');
+
+:root{
+    --interactive:#FF53DA;
+    --titles: #6C63FF;
+}
+
+body{
+    margin: 0;
+    font-family: 'Poppins';
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(28, 0, 46);
+    
+}
+
+.conference{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.confvid{
+    width: 100%;
+    height: 720px;
+}
+
+.conferencia{
+    margin-top: 20px;
+}
+.cssbuttons-io-button {
+    background: var(--interactive);
+    cursor: pointer;
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #714da6;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+   }
+   
+   .cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+    right: 0.3em;
+    transition: all 0.3s;
+   }
+   
+   .cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+   }
+   
+   .cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #7b52b9;
+   }
+   
+   .cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+   }
+   
+   .cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+   }
+   
+
+
+header .container_nav .navbar a{
+    font-size: 16px;
+}
+
+i{
+    margin-left: 30px;
+    color: var(--interactive);
+    font-size: 50px;
+}
+
+p{
+    font-weight:200;
+}
+
+.undrawreg{
+    width: 190px;
+    margin-bottom: -28px;
+}
+.container_landing{
+    background: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0,1)),url(/Proyecto_Snackconference/img/bgconferences1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom:100px;
+}
+
+.login{
+    background: url(/Proyecto_Snackconference/img/bglogin.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.targetlogin{
+    background-color: rgba(0, 0, 0, 0.9);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    border: solid white 1px;
+    border-radius: 40px;
+}
+
+form label,a{
+     font-size: 12px;
+}
+
+ form h2{
+     color: var(--titles);
+ }
+
+
+ #comApp{
+     margin-top: 30px;
+     text-align: center;
+     align-items: center;
+     justify-content: center;
+ }
+
+ #btnEnviarComentario{
+     cursor: pointer;
+     background-color: var(--interactive);
+     width: 100px;
+     color: var(--interactive);
+     border: transparent;
+     border-radius: 20px;
+    color: white;
+    transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    margin-left: 10px;
+ }
+ #btnEnviarComentario:hover{
+     background-color: violet;
+ }
+
+ #comment-section{
+     display: flex;
+     flex-direction: column;
+     color: white;
+     text-align: left;
+ }
+ .single-comment{
+     background-color: rgb(9, 0, 15);
+     border-radius: 20px;
+     padding: 10px 0 10px 20px;
+     margin: 10px 10px 10px 15px;
+ }
+
+
+ .filacol{
+     display: flex;
+     flex-direction: row;
+     width: 100%;
+ }
+ #txt-comments{
+     width: 100%;
+     line-height: 28px;
+    border: 2px solid transparent;
+    border-bottom-color: white;
+    padding: .2rem 0;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    width: 100%;
+ }
+
+#comApp label{
+    color: white;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.buttonlogin{
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 32px;
+    border-radius: 30px;
+    color: white;
+    background-color: var(--interactive);
+    border: none;
+    transition: 0.5s;
+}
+
+.buttonlogin:hover{
+    background-color: #ff91e7;
+}
+
+form{
+    margin: 20px;
+}
+.textbox {
+    line-height: 28px;
+    border: 2px solid transparent;
+    border-bottom-color: white;
+    padding: .2rem 0;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    margin-bottom: 15px;
+    width: 250px;
+   }
+   
+   .textbox:focus, .textbox:hover {
+    outline: none;
+    padding: .2rem 1rem;
+    border-radius: 1rem;
+    border-color: var(--interactive);
+   }
+   
+   .textbox::placeholder {
+    color: #777;
+   }
+   
+   .textbox:focus::placeholder {
+    opacity: 0;
+    transition: opacity .3s;
+   }
+   
+
+.targetlogin .undrawlog{
+    width: 350px;
+    margin-bottom: -28px;
+}
+
+.container-login{
+    width: 100%;
+    height: 100%;
+}
+
+.textbox[type="date"]::-webkit-calendar-picker-indicator {
+    background-color: var(--interactive);
+    border-radius: 20px;
+}
+.textbox[type="date"]{
+    color: #777;
+}
+
+.fila{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align:left;
+    align-items: center;
+    flex-wrap: wrap;
+}
+header{
+    height: 60px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+header .container_navlog .fila div a{
+    font-size: 14px;
+}
+
+header .container_navlog{
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+    padding-top: 20px;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color: var(--interactive);
+}
+.botonnavbar{
+    padding: 6px 40px;
+    margin: 0px 20px;
+    border-radius: 100px;
+    transition: 0.3s;
+}
+.botonnavbar:hover{
+    border: solid var(--interactive) 1px;
+}
+
+.imagen{
+    margin: 50px;
+}
+
+.imagen img{
+    width: 350px;
+}
+
+.content{
+    padding-top: 90px;
+}
+
+.textogrande{
+    font-weight: 900;
+    font-size: 3em;
+    color: white;
+}
+.snack{
+    color: var(--titles);
+}
+.text input{
+    padding: 10px 40px;
+    background-color: transparent;
+    border: solid var(--interactive) 1px;
+    border-radius: 100px;
+    color: var(--interactive);
+    transition: 0.3s;
+}
+
+.text input:hover{
+    background-color: #FF53DA;
+    color: white;
+}
+
+.profilebutton:hover{
+    background-color: #FF53DA;
+    color: white;
+}
+
+h1{
+    color: var(--titles);
+    font-size: 36px;
+}
+
+.titulo{
+    margin-left: 30px;
+}
+
+.container_conferencistas{
+    margin-top: 0;
+    background-color: black;
+}
+
+.card{
+    width: 200px;
+    margin: 10px;
+    transition: all 300ms;
+}
+
+.card:hover{
+    width: 230px;
+}
+
+.card .cover{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card .cover img{
+    width: 150px;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 80px;
+    z-index: 1;
+    filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.5));
+    transition: all 400ms;
+}
+
+.card:hover .cover img{
+    top: 65px;
+    filter: none;
+}
+
+.card .img__back{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    background-size: cover;
+    border-radius: 20px;
+    transition: all 300ms;
+}
+
+.card:nth-of-type(1) .img__back{
+    background-image: url(/Proyecto_Snackconference/img/bg1.jpg);
+}
+
+.card:nth-of-type(2) .img__back{
+    background-image: url(/Proyecto_Snackconference/img/bg2.jpg);
+}
+
+.card:nth-of-type(3) .img__back{
+    background-image: url(/Proyecto_Snackconference/img/bg3.jpg);
+}
+
+.card:hover .img__back{
+    bottom: -40px;
+}
+
+.card .description{
+    background: black;
+    border: solid var(--interactive) 1px;
+    margin-top: -10px;
+    padding: 20px;
+    border-radius: 0px 0px 20px 20px;
+    transition: all 300ms;
+}
+
+.card:hover .description{
+    padding: 40px;
+}
+
+.card .description h2{
+    margin-top: 10px;
+}
+
+.card .description p{
+    margin-top: 10px;
+}
+
+.card .description input{
+    padding: 10px 40px;
+    margin-top: 20px;
+    border: solid var(--interactive) 1px;
+    color: var(--interactive);
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 300ms;
+}
+
+.card .description input:hover{
+    background: var(--interactive);
+    color: white;
+}
+
+
+.botonleermas:hover{
+    background-color: var(--interactive);
+    color: white;
+}
+
+.nombreperfiles{
+    color: #6C63FF;
+}
+
+.descripcionperfiles{
+    color: white;
+}
+
+@media screen and (max-device-width:600px){
+    .textogrande{
+        font-size: 24px;
+    }
+    
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Proyecto_Snackconference/css/stylesnack.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Crea tu cuenta</title>
+</head>
+<body class="login">
+
+    <div class="container-login">
+        <header>
+            <div class="container_navlog">
+                <div class="fila">
+                    <a href="/Proyecto_Snackconference/snackconferences.html"><i class="ri-home-2-line"></i></a>
+                    <div><a href="/Proyecto_Snackconference/snackconferences.html">Volver al inicio</a></div>
+                </div>
+            </div>
+        </header>
+        <div class="fila">
+            <div class="targetlogin">
+                <form id="formulario" onsubmit="registrarUsuario()" action="">
+                    <h2>Crea tu cuenta</h2>
+                    <input id="txt-name" placeholder="Nombres" type="text" class="textbox" required=""><br>
+                    <input id="txt-last" placeholder="Apellidos" type="text" class="textbox" required=""><br>
+                    <input id="txt-correo" placeholder="Correo electrónico" type="email" class="textbox" required=""><br>
+                    <input id="txt-pss" placeholder="Crea una contraseña" type="password" class="textbox" required=""><br>
+                    <input id="txt-conpss" placeholder="Confirmar contraseña" type="password" class="textbox" required=""><br>
+                    <input id="txt-birth" type="date" class="textbox" required="" placeholder="Fecha de nacimiento"><br>
+                    <input id="btnRegister" class="buttonlogin" type="submit" value="Crea tu cuenta"><br>
+                    <label for="l">¿Ya tienes cuenta? </label><a href="/Proyecto_Snackconference/login.html">Iniciar sesión</a><br>
+                </form>
+                
+                <img class="undrawreg" src="/Proyecto_Snackconference/img/undraw_registro.svg" alt="img">
+                
+                
+            </div>
+        </div>
+    </div>
+    <script src="/Proyecto_Snackconference/js/auth.js"></script>
+</body>
+</html>

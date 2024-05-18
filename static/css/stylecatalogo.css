@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;500;700&display=swap');
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 50px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 57.45px; } h3 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
+
+:root{
+    --slate-gray: #6e7e85ff;
+    --interactive: #042CBB;
+    --azulclarito: #A0B5FF;
+    --azulmasclaro: #ced8fc;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    min-width: 375px;
+    max-width: 1920px;
+    font-family: 'Hind';
+    background-color: var(--slate-gray);
+    background: url(/imgs/backgroundcatalogo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin:0;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    padding: 1rem;
+    background-color: #9e9d9d;
+    text-align: center;
+    width: 100%;
+    font-weight: lighter;
+    font-family: 'Hind';
+    font-size: 10px;
+  }
+
+
+  .botoninicio{
+      padding-left: 20px;
+  }
+
+  .botoninicio:hover{
+      color: white;
+  }
+.fila{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.imgcurso{
+    width: 100%;
+}
+.filastart{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 50px;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100px;
+    align-items: center;
+    font-size: 24px;
+    font-weight: lighter;
+    justify-content: flex-end;
+}
+.opcion{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.marcanav{
+    display: flex;
+    font-weight: bold;
+    font-size: 40px;
+    margin-right: 50%;
+}
+
+
+.tituloprod{
+    font-size: 60px;
+    font-weight: bolder;
+    padding: 50px;
+    margin-right: 30%;
+}
+
+.precio{
+    font-size: 40px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+.botoncomprar{
+    font-size: 18px;
+    font-weight: lighter;
+    padding: 15px;
+    width: 110px;
+    height: 20px;
+    text-align: center;
+    text-align-last: center;
+    border: 1px solid var(--interactive);
+    border-radius: 50px;
+    color: #042CBB;
+    transition:0.3s;
+    padding-top: 10px;
+}
+.botoncomprar:hover{
+    background-color: var(--interactive);
+    color: white;
+}
+.grafico{
+    text-align: center;
+    width: 380px;
+    padding: 50px;
+    
+}
+.videocurso{
+    width: 410px;
+    padding: 20px;
+}
+.descripcion{
+    margin: 10px;
+    width: 380px;
+}
+img{
+    border-radius: 10px;
+    width: 500px;;
+}
+
+.imggrafico{
+    width: 100%;
+}
+
+.calificacion{
+    margin-right: 100px;
+    font-weight: lighter;
+}
+
+.picture{
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-right: 90px;
+}
+.profilepic{
+    width: 200px;
+    
+}
+.datosbasicos{
+    margin-top: 100px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    align-items: center;
+    font-size: 24px;
+    font-weight: lighter;
+    justify-content: flex-end;
+    
+}
+
+.parrafodatos{
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+/********ESTILO CARDS********/
+.carta{
+    position: relative;
+    width: 250px;
+    height: 350px;
+    margin: 60px;
+    font-family: 'Hind';
+}
+.titlecards{
+    font-size: 30px;
+    text-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+}
+
+.carta div{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+    transition: 1s;
+    padding: 20px;
+}
+
+.carta .front{
+    background: url(/imgs/curso.jpg) 20% 1% / cover no-repeat;;
+    color:  white;
+    border: 3px solid white;
+    align-items: baseline;
+    justify-content: flex-end;
+    border-radius: 20px;
+    transform: perspective(500px) rotateY(0deg);
+    font-size: 35px;
+    flex-direction: column;
+}
+
+.carta .back{
+    background-color: var(--azulmasclaro);
+    border: 3px solid #B7CECE;
+    border-radius: 20px;
+    flex-direction: column;
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.carta:hover .front{
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.carta:hover .back{
+    transform: perspective(500px) rotateY(360deg);
+}
+
+p{
+    padding: 5px;
+    font-family: 'Hind';
+    font-weight:lighter;
+    font-size: 18px;
+}
+
+/*****ESTILO PERFILES*****/
+#perfiles{
+    margin-bottom: 100px;
+}
+.card{
+    width: 300px;
+    margin: 10px;
+    transition: all 300ms;
+}
+
+.card:hover{
+    width: 350px;
+}
+
+.card .cover{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card .cover img{
+    width: 250px;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 40px;
+    z-index: 1;
+    filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.5));
+    transition: all 400ms;
+}
+
+.card:hover .cover img{
+    top: 0px;
+    filter: none;
+}
+
+.card .img__back{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    background-size: cover;
+    border-radius: 20px;
+    transition: all 300ms;
+}
+
+.card:nth-of-type(1) .img__back{
+    background-image: url(/imgs/bg1.jpg);
+}
+
+.card:nth-of-type(2) .img__back{
+    background-image: url(/imgs/bg2.jpg);
+}
+
+.card:nth-of-type(3) .img__back{
+    background-image: url(/imgs/bg3.jpg);
+}
+
+.card:hover .img__back{
+    bottom: -40px;
+}
+
+.card .description{
+    background: white;
+    margin-top: -10px;
+    padding: 20px;
+    border-radius: 0px 0px 20px 20px;
+    transition: all 300ms;
+}
+
+.card:hover .description{
+    padding: 40px;
+}
+
+.card .description h2{
+    margin-top: 10px;
+}
+
+.card .description p{
+    margin-top: 10px;
+}
+
+.card .description input{
+    padding: 10px 40px;
+    margin-top: 20px;
+    border: none;
+    background: var(--interactive);
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 300ms;
+}
+
+.card .description input:hover{
+    background: #334fb4;
+}
+
+
+.botonleermas:hover{
+    background-color: var(--interactive);
+    color: white;
+}
+
+fieldset, label { margin: 0px; padding-left: 0px; }
+
+
+/****** Style Star Rating Widget *****/
+
+.rating { 
+  border: none;
+  float: left;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label { 
+  color: #ddd; 
+ float: right; 
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #042CBB;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #587af3;  } 
+
+

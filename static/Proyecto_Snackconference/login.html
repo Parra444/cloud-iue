@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Proyecto_Snackconference/css/stylesnack.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Inicio de sesión</title>
+</head>
+<body class="login">
+
+    <div class="container-login">
+        <header>
+            <div class="container_navlog">
+                <div class="fila">
+                    <a href="/Proyecto_Snackconference/snackconferences.html"><i class="ri-home-2-line"></i></a>
+                    <div><a href="/Proyecto_Snackconference/snackconferences.html">Volver al inicio</a></div>
+                </div>
+            </div>
+        </header>
+        <div class="fila">
+            <div class="targetlogin">
+                <form onsubmit="log()" action="">
+                    <h2>Inicio de sesión</h2>
+                    <input id="txt-user" placeholder="Nombre de usuario" type="text" class="textbox" required=""><br>
+                    <input id="txt-password"placeholder="Contraseña" type="password" class="textbox" required=""><br>
+                    <input id="btnLogin" class="buttonlogin" type="submit" value="Iniciar sesión"><br>
+                    <label for="email">¿No tienes una cuenta? </label><a href="/Proyecto_Snackconference/registro.html">Registrate aquí</a><br>
+                    <a href="#">Olvidé mi contraseña</a>
+                </form>
+                
+                <img class="undrawlog" src="/Proyecto_Snackconference/img/undraw_login.svg" alt="img">
+                
+                
+            </div>
+        </div>
+    </div>
+    <script src="/Proyecto_Snackconference/js/auth.js"></script>
+</body>
+</html>
