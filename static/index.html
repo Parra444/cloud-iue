@@ -47,10 +47,34 @@
                     <ul class="ulconsulta">
                         <li><a class="hojadevida" href="/static/consultas/consulta1.html">Modelo DOM</a></li>
                         <li><a href="/static/consultas/consulta2.html">Landing Page</a></li>
-                        <li>Consulta 3</li>
+                        <li><a id="consulta-pedidos" href="#">Consulta de pedidos</a></li>
                         <li>Consulta 4</li>
                     </ul>
                 </div>
+                <div id="respuesta-pedidos"></div>
+
+                <script>
+                    // Obtener el elemento "Consulta de pedidos"
+                    const consultaPedidos = document.getElementById('consulta-pedidos');
+                    // Obtener el elemento donde mostrar la respuesta
+                    const respuestaPedidos = document.getElementById('respuesta-pedidos');
+
+                    // Evento de clic en el enlace de "Consulta de pedidos"
+                    consultaPedidos.addEventListener('click', () => {
+                        // Realizar la solicitud fetch
+                        fetch('http://34.123.210.245:4000/pedidos')
+                            .then(response => response.json()) // Convertir la respuesta a JSON
+                            .then(data => {
+                                // Mostrar la respuesta en el elemento correspondiente
+                                respuestaPedidos.innerHTML = JSON.stringify(data);
+                            })
+                            .catch(error => {
+                                // Manejar errores
+                                console.error('Error:', error);
+                                respuestaPedidos.innerHTML = 'Hubo un error al realizar la consulta de pedidos.';
+                            });
+                    });
+                </script>
             </div>
 
             <div class="retos">
